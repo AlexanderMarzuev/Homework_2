@@ -15,9 +15,9 @@ public class HibernateUtil {
                 Properties prop = new Properties();
                 // Загружаем properties из classpath
                 try (InputStream input = HibernateUtil.class.getClassLoader()
-                        .getResourceAsStream("database.properties")) {
+                        .getResourceAsStream("hibernate.properties")) {
                     if (input == null) {
-                        throw new RuntimeException("Файл database.properties не найден");
+                        throw new RuntimeException("Файл hibernate.properties не найден");
                     }
                     prop.load(input);
                 }

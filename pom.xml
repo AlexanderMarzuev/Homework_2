@@ -20,11 +20,17 @@
                 <artifactId>jakarta.persistence-api</artifactId>
                 <version>3.1.0</version>
             </dependency>
-        <!-- Hibernate ORM -->
+
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>6.5.0.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.5</version>
         </dependency>
     </dependencies>
 
